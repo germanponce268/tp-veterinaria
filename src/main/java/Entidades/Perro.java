@@ -1,14 +1,14 @@
 package Entidades;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
 public class Perro extends Mascota{
+
 
     public String ladrar(){
         return "Guau Guau!";

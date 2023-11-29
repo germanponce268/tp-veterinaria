@@ -14,4 +14,10 @@ public class Enfermo extends Estado{
     public Enfermo(){
         this.estadoAnimo = "Triste";
     }
+
+
+    @Override
+    public void mostrarEstado() {
+        System.out.println(this.estadoAnimo);
+    }
 }

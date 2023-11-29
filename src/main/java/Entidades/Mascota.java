@@ -13,14 +13,13 @@ import lombok.Setter;
 public abstract class Mascota {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected int id;
     protected String nombre;
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "estado_id")
     protected Estado estadoSalud;
-    protected Double temperatura;
+    protected double temperatura;
     protected Double peso;
 
 }
