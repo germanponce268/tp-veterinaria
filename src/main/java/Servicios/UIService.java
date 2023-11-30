@@ -22,6 +22,7 @@ public class UIService {
         System.out.println("1 - AGREGAR TURNO ");
         System.out.println("2 - MODIFICAR TURNO");
         System.out.println("3 - VER TURNO");
+        System.out.println("4 - VER TODOS LOS TURNOS");
         System.out.println("4 - ELIMINAR TURNO");
         System.out.println("Ingresa un numero del 1 al 4");
         int seleccion = this.consola.nextInt();
@@ -36,8 +37,10 @@ public class UIService {
                 this.turnoService.obtenerTurno();
                 break;
             case 4:
-                this.turnoService.eliminarTurno();
+                this.turnoService.obtenerTurnos();
                 break;
+            case 5:
+                this.turnoService.eliminarTurno();
             default:
                 System.out.println("Numero incorrecto.");
                 break;

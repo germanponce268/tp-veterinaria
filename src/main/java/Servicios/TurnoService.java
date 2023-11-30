@@ -8,6 +8,7 @@ import jdk.swing.interop.SwingInterOpUtils;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 public class TurnoService {
@@ -70,5 +71,12 @@ public class TurnoService {
         Integer id = this.consola.nextInt();
         this.turnoDAO.eliminarTurno(id);
         System.out.println("Se elimino el turno");
+    }
+
+    public void obtenerTurnos(){
+        List<Turno> listadoTurnos  = this.turnoDAO.obtenerTurnos();
+        listadoTurnos.forEach(turno ->{
+            System.out.println("Turno N°: " + turno.getId()+ " el dia " + turno.getFecha() + " con " + turno.getMedico());
+        });
     }
 }

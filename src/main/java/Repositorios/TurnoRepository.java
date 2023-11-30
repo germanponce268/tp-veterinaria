@@ -4,6 +4,8 @@ import Controladores.TurnoControlador;
 import DAO.TurnoDAO;
 import Entidades.Turno;
 
+import java.util.List;
+
 public class TurnoRepository implements TurnoDAO {
 
     TurnoControlador turnoControlador;
@@ -28,6 +30,11 @@ public class TurnoRepository implements TurnoDAO {
     @Override
     public void eliminarTurno(Integer id) {
         this.turnoControlador.eliminarTurno(id);
+    }
+
+    @Override
+    public List<Turno> obtenerTurnos() {
+        return this.turnoControlador.obtenerTurnos();
     }
 
 

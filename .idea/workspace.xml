@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a59ffb58-a204-4def-a5ae-88bac54c4dd7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controladores/MascotaControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controladores/MascotaControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controladores/TurnoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controladores/TurnoControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/MascotaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/MascotaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repositorios/MascotaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repositorios/MascotaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TurnoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/TurnoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Repositorios/TurnoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repositorios/TurnoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servicios/MascotaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servicios/MascotaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servicios/TurnoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servicios/TurnoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servicios/UIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servicios/UIService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Servicios/UIService.java</url>
-          <line>69</line>
+          <line>72</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
