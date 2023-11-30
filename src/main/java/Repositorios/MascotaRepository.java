@@ -4,6 +4,8 @@ import Controladores.MascotaControlador;
 import DAO.MascotaDAO;
 import Entidades.Mascota;
 
+import java.util.List;
+
 public class MascotaRepository implements MascotaDAO {
 
     private MascotaControlador mascotaControlador;
@@ -30,4 +32,11 @@ public class MascotaRepository implements MascotaDAO {
     public void eliminarMascota(Integer id) {
         this.mascotaControlador.eliminarMascota(id);
     }
+
+    @Override
+    public List<Mascota> obtenerMascotas() {
+        return this.mascotaControlador.obtenerMascotas();
+    }
+
+
 }

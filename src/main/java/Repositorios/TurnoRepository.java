@@ -1,26 +1,34 @@
 package Repositorios;
 
+import Controladores.TurnoControlador;
 import DAO.TurnoDAO;
 import Entidades.Turno;
 
 public class TurnoRepository implements TurnoDAO {
+
+    TurnoControlador turnoControlador;
+    public TurnoRepository(){
+        this.turnoControlador = new TurnoControlador();
+    }
     @Override
     public void insertarTurno(Turno turno) {
-
+        this.turnoControlador.agregarTurno(turno);
     }
 
     @Override
     public Turno obtenerTurno(Integer id) {
-        return null;
+        return this.turnoControlador.obtenerTurno(id);
     }
 
     @Override
     public Turno actualizarTurno(Turno turno) {
-        return null;
+        return this.turnoControlador.actualizarTurno(turno);
     }
 
     @Override
     public void eliminarTurno(Integer id) {
-
+        this.turnoControlador.eliminarTurno(id);
     }
+
+
 }

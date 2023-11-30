@@ -9,6 +9,7 @@ import Estados.Saludable;
 import Repositorios.MascotaRepository;
 
 
+import java.util.List;
 import java.util.Scanner;
 
 public class MascotaService {
@@ -120,5 +121,12 @@ public class MascotaService {
         Integer id = this.consola.nextInt();
         this.mascotaDAO.eliminarMascota(id);
         System.out.println("Se elimino la mascota!4");
+    }
+
+    public void obtenerMascotas(){
+        List<Mascota> listadoMascotas = this.mascotaDAO.obtenerMascotas();
+        listadoMascotas.forEach(mascota -> {
+            System.out.println(mascota.getNombre() + " \n Id: " + mascota.getId() + " \n Peso: " + mascota.getPeso() + " \n Estado de animo:" + mascota.getEstadoSalud());
+        });
     }
 }

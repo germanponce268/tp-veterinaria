@@ -32,5 +32,24 @@ public class TurnoControlador {
         return turno;
     }
 
+    public Turno actualizarTurno(Turno turno){
+        this.entityManager = this.entityManagerFactory.createEntityManager();
+        this.entityManager.getTransaction().begin();
+        Turno turnoDB  = this.entityManager.find(Turno.class, turno.getId());
+        turnoDB.setId(turno.getId());
+        turnoDB.setFecha(turno.getFecha());
+        turnoDB.setMedico(turno.getMedico());
+        this.entityManager.merge(turnoDB);
+        this.entityManager.getTransaction().commit();
+        return turnoDB;
+    }
 
+    public void eliminarTurno(Integer id){
+        this.entityManager = this.entityManagerFactory.createEntityManager();
+        this.entityManager.getTransaction().begin();
+        Turno turno = this.entityManager.find(Turno.class, id);
+        this.entityManager.remove(turno);
+        this.entityManager.close();
+
+    }
 }

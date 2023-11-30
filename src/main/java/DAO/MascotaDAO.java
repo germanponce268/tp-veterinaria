@@ -2,6 +2,8 @@ package DAO;
 
 import Entidades.Mascota;
 
+import java.util.List;
+
 public interface MascotaDAO {
 
     void insertarMascota(Mascota mascota);
@@ -11,5 +13,7 @@ public interface MascotaDAO {
     Mascota actualizarMascota(Mascota mascota);
 
     void eliminarMascota(Integer id);
+
+    List<Mascota> obtenerMascotas();
 
 }

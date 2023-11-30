@@ -13,7 +13,6 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.default_schema" value="mascotas"/>
             <property name="hibernate.show_sql" value="true"/>
-            <!-- Otras propiedades de Hibernate si es necesario -->
         </properties>
     </persistence-unit>
 
