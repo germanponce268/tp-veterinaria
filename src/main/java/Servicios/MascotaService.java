@@ -9,8 +9,12 @@ import Estados.Saludable;
 import Repositorios.MascotaRepository;
 
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MascotaService {
 
@@ -128,5 +132,12 @@ public class MascotaService {
         listadoMascotas.forEach(mascota -> {
             System.out.println(mascota.getNombre() + " \n Id: " + mascota.getId() + " \n Peso: " + mascota.getPeso() + " \n Estado de animo:" + mascota.getEstadoSalud());
         });
+    }
+
+    public void obtenerMascotaMasAfiebrada(){
+        List<Mascota> listadoMascotas = this.mascotaDAO.obtenerMascotas();
+        Optional<Mascota> maxTemp = listadoMascotas.stream()
+                .max(Comparator.comparingDouble(Mascota::getTemperatura));
+        System.out.println("La mascota con mas temperatura es " + maxTemp.get().getNombre() + " con " + maxTemp.get().getTemperatura() + "° ");
     }
 }

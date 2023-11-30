@@ -71,4 +71,6 @@ public class MascotaControlador {
         List<Mascota> listadoMascotas = this.entityManager.createQuery(criteriaQuery).getResultList();
         return listadoMascotas;
     }
+
+
 }

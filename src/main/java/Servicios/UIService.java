@@ -54,6 +54,7 @@ public class UIService {
         System.out.println("3 - VER MASCOTA");
         System.out.println("4 - VER TODAS LAS MASCOTAS");
         System.out.println("5 - ELIMINAR MASCOTA");
+        System.out.println("6 - MASCOTA MAS AFIEBRADA");
         System.out.println("Ingresa un numero del 1 al 5");
         int seleccion = this.consola.nextInt();
         switch (seleccion){
@@ -71,6 +72,9 @@ public class UIService {
                 break;
             case 5:
                 this.mascotaService.eliminarMascota();
+                break;
+            case 6:
+                this.mascotaService.obtenerMascotaMasAfiebrada();
                 break;
             default:
                 System.out.println("Numero incorrecto.");
